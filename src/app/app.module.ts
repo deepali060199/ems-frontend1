@@ -8,10 +8,22 @@ import { HttpClientModule } from '@angular/common/http';
 import { CreateEmployeeComponent } from './create-employee/create-employee.component';
 import { FormsModule } from '@angular/forms';
 import { UpdateEmployeeComponent } from './update-employee/update-employee.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
-  declarations: [AppComponent, EmployeeListComponent, CreateEmployeeComponent, UpdateEmployeeComponent],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
+  declarations: [
+    AppComponent,
+    EmployeeListComponent,
+    CreateEmployeeComponent,
+    UpdateEmployeeComponent,
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
