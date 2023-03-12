@@ -4,4 +4,5 @@ export class Employee {
   address: string = '';
   salaryGrade: number = 0;
   rating: number = 0;
+  checked: boolean = false;
 }
