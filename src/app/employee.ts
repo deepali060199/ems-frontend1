@@ -1,8 +1,16 @@
 export class Employee {
   id: number = 0;
-  name: string = '';
+  firstName: string = '';
+  lastName: string = '';
+  age: number = 0;
+  gender: string = '';
+
   address: string = '';
-  salaryGrade: number = 0;
+  state: string = '';
+  city: string = '';
+  email: string = '';
+
+  salary: number = 0;
   rating: number = 0;
   checked: boolean = false;
 }

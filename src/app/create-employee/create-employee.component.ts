@@ -23,20 +23,46 @@ export class CreateEmployeeComponent {
   ) {}
 
   registrationForm = new FormGroup({
-    name: new FormControl('', [Validators.required]),
+    firstName: new FormControl('', [Validators.required]),
+    lastName: new FormControl('', [Validators.required]),
+    // gender: new FormControl('', [Validators.required]),
+    age: new FormControl('', [Validators.required]),
     address: new FormControl('', [Validators.required]),
-    salaryGrade: new FormControl('', [Validators.required]),
-    rating: new FormControl('', [Validators.pattern('[1-9]+$')]),
+    state: new FormControl('', [Validators.required]),
+
+    email: new FormControl('', [Validators.required]),
+    city: new FormControl('', [Validators.required]),
+
+    salary: new FormControl('', [Validators.required]),
+    // rating: new FormControl('', [Validators.pattern('[1-9]+$')]),
   });
 
-  get name() {
-    return this.registrationForm.get('name');
+  get firstName() {
+    return this.registrationForm.get('firstName');
+  }
+  get lastName() {
+    return this.registrationForm.get('lastName');
+  }
+  get gender() {
+    return this.registrationForm.get('gender');
+  }
+  get age() {
+    return this.registrationForm.get('age');
   }
   get address() {
     return this.registrationForm.get('address');
   }
-  get salaryGrade() {
-    return this.registrationForm.get('salaryGrade');
+  get state() {
+    return this.registrationForm.get('state');
+  }
+  get city() {
+    return this.registrationForm.get('city');
+  }
+  get email() {
+    return this.registrationForm.get('email');
+  }
+  get salary() {
+    return this.registrationForm.get('salary');
   }
   get rating() {
     return this.registrationForm.get('rating');
