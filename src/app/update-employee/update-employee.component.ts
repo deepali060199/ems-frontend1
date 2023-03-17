@@ -24,6 +24,10 @@ export class UpdateEmployeeComponent implements OnInit {
     });
   }
 
+  changeRating(value: string) {
+    this.employee.rating = Number(value);
+  }
+
   gotoEmployeeList() {
     this.router.navigate(['/employee']);
   }

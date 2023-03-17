@@ -6,30 +6,7 @@
         <input
           type="text"
           class="form-control"
-          placeholder="enter firstname"
-          id="firstName"
-          [(ngModel)]="employee.firstName"
-          name="firstName"
-        />
-      </div>
-      <div class="form-group col">
-        <input
-          type="text"
-          class="form-control"
-          placeholder="enter lastname"
-          id="firstName"
-          [(ngModel)]="employee.lastName"
-          name="lastName"
-        />
-      </div>
-    </div>
-
-    <div class="form-row">
-      <div class="form-group col">
-        <input
-          type="text"
-          class="form-control"
-          placeholder="enter employee address"
+          placeholder="enter  address"
           id="address"
           [(ngModel)]="employee.address"
           name="addeess"
@@ -39,7 +16,7 @@
         <input
           type="text"
           class="form-control"
-          placeholder="enter employee email"
+          placeholder="enter  email"
           id="email"
           [(ngModel)]="employee.email"
           name="email"
@@ -52,21 +29,49 @@
         <input
           type="text"
           class="form-control"
+          placeholder="enter state"
+          id="state"
+          [(ngModel)]="employee.state"
+          name="city"
+        />
+      </div>
+      <!-- <div class="form-group col">
+        <input
+          type="text"
+          class="form-control"
           placeholder="enter  rating"
           id="rating"
           [(ngModel)]="employee.rating"
           name="rating"
         />
-      </div>
+      </div> -->
       <div class="form-group col">
         <input
           type="text"
           class="form-control"
-          placeholder="enter employee city"
-          id="ciy"
+          placeholder="enter  city"
+          id="city"
           [(ngModel)]="employee.city"
           name="city"
         />
+      </div>
+    </div>
+    <div class="form-row">
+      <div class="form-group col">
+        <select
+          formControlName="rating"
+          id="inputState"
+          #ratings
+          class="form-control"
+          (change)="changeRating(ratings.value)"
+        >
+          <option value="">Choose Rating</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
       </div>
     </div>
 
