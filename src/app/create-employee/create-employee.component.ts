@@ -80,6 +80,10 @@ export class CreateEmployeeComponent {
     this.router.navigate(['/employee']);
   }
 
+  resetForm() {
+    this.registrationForm.reset();
+  }
+
   onSubmit() {
     console.log(this.registrationForm.value);
 
